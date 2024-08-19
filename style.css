@@ -119,3 +119,11 @@ body {
   border: 2px solid orange;
   flex-grow: 3;
 }
+label {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+.form_container {
+  border: 2px solid blue;
+}
