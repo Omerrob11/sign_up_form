@@ -24,6 +24,10 @@ body {
 /*
   5. Improve media defaults
 */
+
+input {
+  outline: none;
+}
 img,
 picture,
 video,
@@ -81,7 +85,7 @@ body {
 
 .background_left {
   border: 2px solid red;
-  flex-grow: 1;
+  width: 33%;
   display: flex;
 
   justify-content: center;
@@ -117,13 +121,71 @@ body {
 /* main content */
 .content_right {
   border: 2px solid orange;
-  flex-grow: 3;
+  width: auto;
+  background-color: rgba(231, 230, 230, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_container {
+  width: 100%;
 }
 label {
   text-transform: uppercase;
   display: block;
   margin-bottom: 5px;
 }
+
 .form_container {
   border: 2px solid blue;
+  padding: 24px 48px;
+}
+
+.form_title {
+  margin-bottom: 16px;
+}
+.form_data {
+  padding: 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.form_send {
+  border: none;
+  padding: 0px;
+}
+
+.input_container {
+  width: 50%;
+}
+
+.input_container input {
+  width: 75%;
+  border: 2px solid #e5e7eb;
+}
+
+input {
+  outline: none;
+  border: 2px solid #e5e7eb; /* No border on page load */
+  padding: 12px;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: red;
+}
+
+input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+input[type="password"]:focus:invalid {
+  border-color: red;
+}
+
+input[type="password"]:not(:placeholder-shown):invalid {
+  border: 2px solid red;
 }

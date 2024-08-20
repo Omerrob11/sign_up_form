@@ -20,52 +20,84 @@
           <div class="form_information">
             <p class="form_information">
               you know you need something like this in your life to help you
-              relaize your deepest dreeams
+              relaize your deepest dreams
             </p>
             <p class="form_information">Sign up now to get started</p>
             <p class="form_information">You know you want to!.</p>
           </div>
 
           <form action="google.com" method="post" class="form_container">
+            <h2 class="form_title">Let's do this!</h2>
+
             <fieldset class="form_data">
-              <h2 class="form_title">Let's do this!</h2>
+              <div class="input_container">
+                <label for="first_name">first Name:*</label>
+                <input
+                  type="text"
+                  id="first_name"
+                  name="first_name"
+                  placeholder="bob..."
+                  required
+                />
+              </div>
 
-              <label for="first_name">first Name:</label>
-              <input
-                type="text"
-                id="first_name"
-                name="first_name"
-                placeholder="bob..."
-              />
+              <div class="input_container">
+                <label for="last_name">last name:*</label>
+                <input
+                  type="text"
+                  id="last_name"
+                  name="last_name"
+                  placeholder="Cohen..."
+                  required
+                />
+              </div>
 
-              <label for="last_name">last name:</label>
-              <input
-                type="text"
-                id="last_name"
-                name="last_name"
-                placeholder="Cohen..."
-              />
+              <div class="input_container">
+                <label for="email">Email Aderss*</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
 
-              <label for="email">Email Aderss</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="you@example.com"
-              />
+              <div class="input_container">
+                <label for="tel_number">Phone NUmber:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="050..."
+                />
+              </div>
 
-              <label for="tel_number">Phone NUmber:</label>
-              <input type="tel" id="phone" name="phone" placeholder="050..." />
+              <div class="input_container">
+                <label for="user_password">Password*</label>
+                <input
+                  type="password"
+                  id="user_password"
+                  name="password"
+                  minlength="6"
+                  maxlength="16"
+                  required
+                  placeholder=""
+                />
+              </div>
 
-              <label for="user_password">Password</label>
-              <input type="password" id="user_password" name="password" />
-
-              <label for="confirm_password">confirm password:</label>
-              <input
-                type="password"
-                id="confirm_password"
-                name="confirm_password"
-              />
+              <div class="input_container">
+                <label for="confirm_password">confirm password:*</label>
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  minlength="6"
+                  maxlength="16"
+                  required
+                  placeholder=""
+                />
+              </div>
             </fieldset>
             <fieldset class="form_send">
               <button type="submit">Create Account</button>
@@ -76,3 +108,10 @@
     </div>
   </body>
 </html>
+
+<!-- what left to do:
+2. doing the intial styles of the form
+3. create the form validation
+4/ creat the button style
+5/ add the account
+-->
